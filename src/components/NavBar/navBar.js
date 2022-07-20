@@ -2,7 +2,7 @@ import React from "react";
 import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import Logo from "../../img/logo.svg";
+
 import { CartWidget } from "./CartWidget";
 import { WishIcon } from "./WishIcon";
 
@@ -23,8 +23,8 @@ export const NavBar = () => {
               <NavDropdown title="Productos" className="dropdown">
                 <Link to="/productos/all">Todos</Link>
                 <NavDropdown.Divider />
-                <Link to="/productos/botellas">Posters</Link>
-                <Link to="/productos/posadores">Llaveros</Link>
+                <Link to="/productos/Posters">Posters</Link>
+                <Link to="/productos/Llaveros">Llaveros</Link>
                
               </NavDropdown>
               <Link to="/contacto">Contacto</Link>
