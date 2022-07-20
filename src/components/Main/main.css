@@ -1,4 +1,4 @@
-/* NORMALIZE */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,8 +8,17 @@
 
 * p {
   margin: 0;
-}
+  color: #012e67;
+  font-family: 'Pacifico', cursive;;
+  text-shadow: 2px 2px 2px #ffcccc;
 
+}
+.contenedor{
+  width:80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .btn {
   padding: 0.5rem 1rem;
   background-color: white;
@@ -18,7 +27,6 @@
   color: #012e67;
 }
 
-/* CARD de PRODUCTS */
 .card__product {
   margin: 0.5rem 1rem 1rem 1rem;
   padding: 0.5rem 0rem 0.75rem 0rem;
@@ -48,9 +56,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
 
-/* ItemList */
+
 .productos {
   display: flex;
   flex-direction: row;
@@ -59,10 +69,11 @@
   justify-content: center;
 }
 
-.productos .card__product .card__product--img img {
-  height: 14rem;
-  width: 14rem;
+.productos .card__product .card__product--img img {/*jdf*/
+  height: auto;
+  width: 100%;
   border-radius: 6px;
+  
 }
 
 .productos .card__product .card__product--cta {
@@ -109,11 +120,10 @@
   flex-direction: row;
 }
 
-/* ItemDetailContainer */
 .card__detail {
   padding: 0.5rem 0rem 0.75rem 0rem;
   background-color: #FFCCCC;
-  width: 100%;
+  width: 70%;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -148,17 +158,19 @@
   padding: 0rem 0rem 0.25rem 0rem;
 }
 
-.card__detail--img {
+.card__detail--img {/*jdf*/
   display: flex;
-  width: 60%;
-  justify-content: center;
+ justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
 }
 
-.card__detail--img img {
-  height: 18rem;
-  width: 18rem;
+.card__detail--img img {/*jdf*/
+ 
   border-radius: 6px;
+  width: 100%;
+  height: auto;
 }
 
 .card__detail--cta {
@@ -201,20 +213,37 @@
   display: flex;
   margin: 0 auto;
 }
-/* main - márgenes del contenido de todas las secciones */
+
 .main {
   padding: 1rem 0;
   min-height: 68vh;
 }
-/* HOME */
+
+.d-block{
+  width: 100%;
+  height: auto;
+}
 .button-primary {
   background-color: #f7b035;;
   border: none;
-  font-family: 'Mulish', sans-serif;
+  font-family:  'Pacifico', cursive;
   font-weight: 700;
   font-size: 2rem;
   margin: 20px auto;
-  width: 200px;
+  width: 30%;
   height: 50px;
   cursor: pointer;
+}
+@media screen and (max-width:800px) {
+
+  .main{
+    width: 100%;
+  }aside{
+    width:100%;
+  }
+  .button-primary{
+    width: 7rem;
+    height: 2.1rem;
+    font-size: 70%;
+  }
 }

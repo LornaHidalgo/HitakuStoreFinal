@@ -12,14 +12,14 @@ export const Home = () => {
         <Carousel.Item>
           <img className="d-block w-100" src="banner.jpg" alt="First slide" />
           <Carousel.Caption>
-          <button 
+         
+            
+            <p>Bienvenido a la tienda online de HitakuStore</p>
+            <button 
           className="button-primary">
             <Link to="/productos/all">Comprar</Link>
           
         </button>
-            <h3 >HitakuStore</h3>
-            <p>Bienvenido a la tienda online de HitakuStore</p>
-           
             
           </Carousel.Caption>
         </Carousel.Item>

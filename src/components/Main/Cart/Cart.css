@@ -1,4 +1,4 @@
-/* CART HEADER */
+
 .cart__header {
   padding: 0.5rem;
   background-color: #FFCCCC;
@@ -27,7 +27,7 @@
 
 .card__cart {
   padding: 0.5rem;
-  background-color: #FFCCCC);
+  background-color: #FFCCCC;
   width: 100%;
   height: auto;
   display: flex;
@@ -67,14 +67,15 @@
 
 .card__cart--img {
   display: flex;
-  width: 30%;
+  width: 100%;
+  height: auto;
   justify-content: center;
   align-items: center;
 }
 
 .card__cart--img img {
-  height: 90%;
-  width: 90%;
+  height: auto;
+  width: 100%;
   border-radius: 6px;
   margin: 0.5rem;
 }
